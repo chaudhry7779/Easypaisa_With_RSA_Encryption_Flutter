@@ -1,0 +1,25 @@
+name: easypaisa_with_rsa_encryption
+description: "Introducing a seamless and secure Flutter package designed to integrate Easypaisa, one of Pakistan's leading payment gateways, into your mobile applications. This package simplifies the process of handling payments while ensuring top-notch security through RSA Encryption, safeguarding sensitive user data during transactions."
+version: 1.0.0
+homepage: https://github.com/chaudhry7779/Easypaisa_With_RSA_Encryption_Flutter
+
+environment:
+  sdk: ^3.5.1
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  pointycastle: ^3.6.0 # For RSA encryption and signing
+  convert: ^3.0.1 # For base64 encoding/decoding
+  basic_utils: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+
+flutter:
+
