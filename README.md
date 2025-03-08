@@ -45,12 +45,16 @@ isSandbox: true, //is testing account or not
 ```dart
 try {
 // Request payment
-final response = await EasypaisaWithRSA.requestPayment(
-amount: '10.5', // Amount to charge
+final result = await EasypaisaWithRSA.requestPayment(
+amount: '1', // Amount to charge
 accountNo: '03451234567', // User account number
 email: 'test@email.com', // User email address
 );
-print(response.body); // to print response body
+
+// Accessing the result properties
+print('API Response: ${result.response}');
+print('Signature: ${result.signature}');
+print('Is Signature Valid: ${result.isSignatureValid}'); // based on signature validation transaction can be marked as verified or suspicious.
 
 } catch (e) {
 print(e.toString()) // to print exception details
@@ -61,15 +65,16 @@ print(e.toString()) // to print exception details
    ```dart
 
 {
-"signature": "YJhvJwQnfTX5ydbSnQydNeWIzN5U8/TSkRiCi1UwGOdbI/b6KiCEX7/1911NzdrdsF5+CoM8OwBAhhBpLYb1kIHh4+a3s5mS2u4z0Vf2khEOLbNv4nb/o4HDBYcdqAAlHkM3akmeXHjZXdOVofz3QBdyNgKwcqlcmw2oycFqzZQB9DY9JaqUHDe6F+UVERIqtdulaLy9uSEsqZX4akPvERlS5fVmQvHDEolkym1aLyomPgOFIIGqzHRw1wYijfmITgLbDsFnkbRUf+atttmmBFdb6v9g6C/vL10+c61CcpEjdwQqzoGiWK5TXq1Z59HT0wtOadcAR6Yd29BaR49N+g==",
 "response": {
-"orderId": "1741212891871",
-"storeId": storeId,
-"transactionId": "34018398193",
-"transactionDateTime": "06/03/2025 03:15 AM",
+"orderId": "1741454647255",
+"storeId": "123456",
+"transactionId": "34823788570",
+"transactionDateTime": "08/03/2025 10: 24 PM",
 "responseCode": "0000",
 "responseDesc": "SUCCESS"
-  }
+},
+"signature": "a1b2c3d4e5f6g7h8i9j0...",
+"isSignatureValid": true
 }
 
 ```
