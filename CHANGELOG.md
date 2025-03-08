@@ -39,3 +39,28 @@
 - Added a **Flutter example app** to demonstrate how to use the `EasypaisaWithRSA` package in a real-world scenario.
   - The example includes a `PaymentScreen` widget with input fields for amount, account number, and email.
   - It demonstrates how to initialize the package, make a payment request, and handle the API response.
+
+## [1.2.3]
+
+### Added
+- **Example App**: Added a complete Flutter example app demonstrating Easypaisa payment integration with RSA encryption.
+  - Includes a payment screen with input fields for amount, account number, and email.
+  - Implements payment request functionality using the `EasypaisaWithRSA` class.
+  - Displays API response details (transaction code, description, ID, and signature validity).
+  - Supports sandbox and live environments.
+  - Includes proper error handling and loading states.
+
+### Changed
+- **Documentation**: Updated `README.md` and `example/README.md` to include setup instructions for the example app.
+- **Dependencies**: Added `pointycastle` as a dependency in the example app for RSA encryption.
+
+### Fixed
+- **Bug Fixes**: Resolved minor issues in the example app related to form validation and state management.
+
+## [1.2.4]
+
+### Changed
+- **Refactoring**: Cleaned up and refactored the `ApiService`, `RSAUtils`, and `EasypaisaWithRSA` classes for better readability and maintainability.
+  - Extracted reusable logic into helper methods.
+  - Simplified key parsing and signing/verification processes.
+  - Improved error handling and validation.

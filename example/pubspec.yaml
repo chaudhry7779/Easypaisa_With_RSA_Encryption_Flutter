@@ -1,0 +1,27 @@
+name: easypaisa_rsa_example
+description: A Flutter example project demonstrating Easypaisa payment integration with RSA encryption.
+
+publish_to: 'none' # Prevents accidental publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  easypaisa_with_rsa_encryption:
+    path: ../ # Points to the root of the package
+  pointycastle: ^3.7.0 # For RSA encryption (if not already included in the main package)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/keys/

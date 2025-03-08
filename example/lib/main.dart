@@ -7,8 +7,10 @@ import 'package:flutter/services.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // Initialize EasypaisaWithRSA with your credentials
-  String privateKey = await rootBundle.loadString('assets/keys/merchant_private_key.pem');
-  String publicKey = await rootBundle.loadString('assets/keys/easypaisa_public_key.pem');
+  String privateKey =
+      await rootBundle.loadString('assets/keys/merchant_private_key.pem');
+  String publicKey =
+      await rootBundle.loadString('assets/keys/easypaisa_public_key.pem');
   EasypaisaWithRSA.initialize(
     'username',
     'password',
