@@ -78,3 +78,50 @@ print(e.toString()) // to print exception details
 }
 
 ```
+
+## : Inquire previous payment
+```dart
+try {
+      final result = await EasypaisaWithRSA.inquirePayment(
+        orderId: '123456...', //order id that was used for payment
+        accountNum: '2154878', //user account number
+      );
+
+      print(result.response['responseCode']);
+      print(result.response['responseDesc']);
+      print(result.response['transactionStatus']);
+}
+catch(e){
+
+}
+
+```
+## : Response
+
+   ```dart
+
+{
+  "response": {
+    "orderId": "1741535434963",
+    "accountNum": "123456...",
+    "storeId": 41253,
+    "storeName": "Store Name",
+    "transactionStatus": "PAID",
+    "transactionAmount": 100,
+    "transactionDateTime": "09/03/2025 11:15 PM",
+    "msisdn": "03123456789",
+    "paymentMode": "MA",
+    "responseCode": "0000",
+    "responseDesc": "SUCCESS",
+    "settlementStatus": "RECON_FAILED"
+  },
+  "signature": "vn2lGKr4AOHz4YbgkF4Ru5Q=="
+}
+
+```
+
+## Support the package
+
+If you find this package useful, you can support it for free by giving it a thumbs up at the top of this page. Here's another option to support the package:
+
+## <p align='center'><a href="https://www.buymeacoffee.com/abosaad"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=jonhanson&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" width="450" height="200"></a></p>

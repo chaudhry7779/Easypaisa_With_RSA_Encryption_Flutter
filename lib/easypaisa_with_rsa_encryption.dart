@@ -74,4 +74,12 @@ class EasypaisaWithRSA {
       email: email,
     );
   }
+
+  static Future<ApiResponse> inquirePayment(
+      {required String orderId, required String accountNum}) async {
+    return ApiService.inquireTransaction(
+      orderId: orderId,
+      accountNum: accountNum,
+    );
+  }
 }

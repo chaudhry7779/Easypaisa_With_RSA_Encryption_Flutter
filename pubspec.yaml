@@ -1,6 +1,6 @@
 name: easypaisa_with_rsa_encryption
 description: Effortlessly integrate Easypaisa into your app with our Flutter package. Simplify payments & ensure secure transactions using RSA Encryption for user data protection.
-version: 1.2.4
+version: 1.3.0
 homepage: https://github.com/chaudhry7779/Easypaisa_With_RSA_Encryption_Flutter
 repository: https://github.com/chaudhry7779/Easypaisa_With_RSA_Encryption_Flutter.git
 issue_tracker: https://github.com/chaudhry7779/Easypaisa_With_RSA_Encryption_Flutter/issues

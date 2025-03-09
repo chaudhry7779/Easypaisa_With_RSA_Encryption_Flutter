@@ -2,7 +2,7 @@
 
 * Initial release.
 
-## [1.1.0] - 2025-March-08
+## [1.1.0] - 2025-03-08
 
 ### Added
 - Added `isSignatureValid` property to the `ApiResponse` model to indicate whether the signature validation was successful.
@@ -64,3 +64,10 @@
   - Extracted reusable logic into helper methods.
   - Simplified key parsing and signing/verification processes.
   - Improved error handling and validation.
+
+## [1.3.0] - 2025-03-09
+
+### Added
+- **Transaction Inquiry Functionality**: Added support for inquiring about transaction status using the Easypaisa API.
+  - New method: `inquireTransaction` in `ApiService`.
+  - Includes validation and error handling for transaction inquiries.
