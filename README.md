@@ -124,4 +124,4 @@ catch(e){
 
 If you find this package useful, you can support it for free by giving it a thumbs up at the top of this page. Here's another option to support the package:
 
-## <p align='center'><a href="https://www.buymeacoffee.com/abosaad"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=jonhanson&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" width="450" height="200"></a></p>
+## <p align='center'><a href="https://www.buymeacoffee.com/abosaad"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=abosaad&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" /></a></p>
